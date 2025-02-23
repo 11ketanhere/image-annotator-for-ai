@@ -5,17 +5,30 @@
 
 ![Site preview](/public/site-preview.png)
 
-## About
 
-The K10 Image Annotation Tool is a powerful web application designed for efficient image annotation and project management. It features:
+## 🌟 Why This Tool?
 
-- Project-based organization
-- Multiple annotation tools (boxes, polygons, keypoints)
-- Version history with undo/redo functionality
-- Gallery view for managing projects and images
-- Export annotated images
+Modern AI systems require precisely labeled training data. The K10 Image Annotation Tool is a powerful web application designed for efficient image annotation, but existing solutions often:
+- Force developers into rigid workflows
+- Add unnecessary bundle bloat
+- Lack customization options
 
-## Installation & Setup
+**React Image Annotation Tool** solves this by providing:
+✅ **Zero heavyweight dependencies** (just React + native browser APIs)  
+✅ **Pixel-perfect control** via SVG/Canvas rendering  
+✅ **Enterprise-ready performance** with 4K image support  
+✅ **Full ownership** of data and UI  
+
+## 🚀 Features
+
+- **Annotation Types**  
+  <img src="box-icon.png" width="20"/> Bounding Boxes | <img src="polygon-icon.png" width="20"/> Polygons | <img src="pin-icon.png" width="20"/> Keypoints | <img src="tag-icon.png" width="20"/> Classification Tags
+
+- **Core Capabilities**  
+  - Undo/redo history   
+  - Zoom/pan for high-resolution images
+
+## 📦 Installation & Setup
 
 Make sure you have Node.js `19.9.0` or higher and npm `9.6.3` or higher installed. Install dependencies with:
 
