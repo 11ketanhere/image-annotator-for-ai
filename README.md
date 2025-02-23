@@ -23,7 +23,7 @@ Modern AI systems require precisely labeled training data. The K10 Image Annotat
 ## 🚀 Features
 
 - **Annotation Types**  
-  <img src="box-icon.png" width="20"/> Bounding Boxes | <img src="polygon-icon.png" width="20"/> Polygons | <img src="pin-icon.png" width="20"/> Keypoints | <img src="tag-icon.png" width="20"/> Classification Tags
+  <img src="/public/logo192.png" width="20"/> Bounding Boxes | <img src="/public/logo192.png" width="20"/> Polygons | <img src="/public/logo192.png" width="20"/> Keypoints | <img src="/public/logo192.png" width="20"/> Classification Tags
 
 - **Core Capabilities**  
   - Undo/redo history   
