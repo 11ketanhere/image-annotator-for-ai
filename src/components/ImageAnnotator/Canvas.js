@@ -10,7 +10,8 @@ const Canvas = ({
   onAnnotationStart,
   onAnnotationUpdate,
   onAnnotationComplete,
-  onAnnotationSelect
+  onAnnotationSelect,
+  showAnnotations, 
 }) => {
   const svgRef = useRef(null);
 
@@ -81,7 +82,7 @@ const Canvas = ({
           )}
         
           {/* Render existing annotations */}
-          {annotations.map((annotation, index) => (
+          {showAnnotations &&  annotations.map((annotation, index) => (
             <g 
               key={annotation.id}
               onClick={() => onAnnotationSelect(annotation)}

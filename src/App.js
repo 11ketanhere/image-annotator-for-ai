@@ -31,6 +31,7 @@ function App() {
   const [currentProject, setCurrentProject] = useState(null);
   const [showAnnotator, setShowAnnotator] = useState(false); // Control annotator visibility
   const [projects, setProjects] = useState([]); // Add projects state
+  const [showAnnotations, setShowAnnotations] = useState(true);
 
   useEffect(() => {
     // Load saved images and projects on component mount
@@ -339,6 +340,8 @@ function App() {
               showGallery={showGallery}
               canUndo={historyIndex > 0}
               canRedo={historyIndex < history.length - 1}
+              showAnnotations={showAnnotations}
+              onToggleAnnotations={() => setShowAnnotations(!showAnnotations)}
             />
 
             <div className="main-content">
@@ -363,6 +366,7 @@ function App() {
                     onAnnotationUpdate={handleAnnotationUpdate}
                     onAnnotationComplete={handleAnnotationComplete}
                     onAnnotationSelect={setSelectedAnnotation}
+                    showAnnotations={showAnnotations}
                   />
                 )}
               </div>

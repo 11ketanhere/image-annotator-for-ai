@@ -1,5 +1,5 @@
-import React from 'react';
-import './styles.css';
+import React from "react";
+import "./styles.css";
 
 const LeftSidebar = ({
   tool,
@@ -11,7 +11,8 @@ const LeftSidebar = ({
   onToggleGallery,
   canUndo,
   canRedo,
-  showGallery
+  showGallery,
+  showAnnotations, onToggleAnnotations
 }) => {
   return (
     <div className="left-sidebar">
@@ -19,8 +20,8 @@ const LeftSidebar = ({
         <h3>Drawing Tools</h3>
         <div className="tool-button">
           <button
-            onClick={() => onToolChange('box')}
-            className={tool === 'box' ? 'active' : ''}
+            onClick={() => onToolChange("box")}
+            className={tool === "box" ? "active" : ""}
             title="Bounding Box"
           >
             <span className="tool-icon">□</span>
@@ -29,8 +30,8 @@ const LeftSidebar = ({
         </div>
         <div className="tool-button">
           <button
-            onClick={() => onToolChange('polygon')}
-            className={tool === 'polygon' ? 'active' : ''}
+            onClick={() => onToolChange("polygon")}
+            className={tool === "polygon" ? "active" : ""}
             title="Polygon"
           >
             <span className="tool-icon">△</span>
@@ -39,8 +40,8 @@ const LeftSidebar = ({
         </div>
         <div className="tool-button">
           <button
-            onClick={() => onToolChange('keypoint')}
-            className={tool === 'keypoint' ? 'active' : ''}
+            onClick={() => onToolChange("keypoint")}
+            className={tool === "keypoint" ? "active" : ""}
             title="Keypoint"
           >
             <span className="tool-icon">●</span>
@@ -54,10 +55,10 @@ const LeftSidebar = ({
         <div className="tool-button">
           <button
             onClick={onToggleGallery}
-            className={showGallery ? 'active' : ''}
-            title={showGallery ? 'Back to Editor' : 'View Gallery'}
+            className={showGallery ? "active" : ""}
+            title={showGallery ? "Back to Editor" : "View Gallery"}
           >
-            {showGallery ? '← Back' : 'Gallery'}
+            {showGallery ? "← Back" : "Gallery"}
           </button>
         </div>
         <div className="tool-button">
@@ -92,6 +93,12 @@ const LeftSidebar = ({
             ↪ Redo
           </button>
         </div>
+        <button
+        onClick={onToggleAnnotations}
+        className={`toggle-annotations-btn ${showAnnotations ? 'active' : ''}`}
+      >
+        {showAnnotations ? 'Hide Annotations' : 'Show Annotations'}
+      </button>
       </div>
     </div>
   );
