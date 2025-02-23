@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="/public/assets/images/brand-logo.png" width="50" alt="Logo" />
+  <img src="/public/logo192.png" width="50" alt="Logo" />
 </p>
 <h1 align="center">K10 Image Annotation Tool</h1>
 
-[![Site preview](/public/assets/images/brand-logo.png)]
+[![Site preview](/public/logo192.png)]
 
 ## About
 
