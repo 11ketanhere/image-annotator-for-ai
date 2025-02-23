@@ -13,7 +13,7 @@ Modern AI systems require precisely labeled training data. The K10 Image Annotat
 - Add unnecessary bundle bloat
 - Lack customization options
 
-**React Image Annotation Tool** solves this by providing:
+**K10 Image Annotation** solves this by providing:
 ✅ **Zero heavyweight dependencies** (just React + native browser APIs)  
 ✅ **Pixel-perfect control** via SVG/Canvas rendering  
 ✅ **Enterprise-ready performance** with 4K image support  
