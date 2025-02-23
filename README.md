@@ -3,7 +3,9 @@
 </p>
 <h1 align="center">K10 Image Annotation Page</h1>
 
+![Site preview](/public/site-preview.png)
 ![Site preview](/public/site-preview2.png)
+
 
 ## 🌟 Why This Tool?
 
